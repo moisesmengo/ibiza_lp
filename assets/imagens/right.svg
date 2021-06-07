@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+	<title>Novo Projeto</title>
+	<defs>
+		<image  width="22" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAAXNSR0IB2cksfwAAAKVQTFRFpzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8pzE8qlOyRAAAADd0Uk5Tmv+9FgACufyIvhS3hQ6TExrFhJDBFQGSF8SHGYOPwJG/GMIKpRG8gai4DYyLiY2KjhILlrSgAwir8tgAAADmSURBVHicVZHtUsJADEX31lShiny0XQsIFAQqFFQQfP9HMymbdMifzZy5czbZdQ7RA3HFj08dsnIO6CaCn4GXFvdegajP3WAIjAxTnAJZzm2eAR3D5N/YI7wYAxPD5NUzZc+7YYpnwPzO02DyC6BsPIHf8M0vnuWwmTPgZp5S9ipWzD8UE02AtZybLVC1uAI+5eztOK7Yc3g85Sbh8GyvuAZWok7mQO31ygNnl5q1AY+B9iMg9Yq/+LHEkLPh2+uW4pVsXgI/9lTqPUVGyZ3rYCjYcPCKfwONL0zbT7siK6T5K83A9Q9f1xHNGfYNRQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Camada 34" href="#img1" x="0" y="0" />
+</svg>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibiza</title>
+
+    <meta name="description" content="A maior em acabamentos" />
+    <meta
+      name="keywords"
+      content="acabamentos, revestimentos, arquitetura, catálogo digital"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="og:image"
+      content="assets/images/https://www.ibizaacabamentos.com.br/wp-content/uploads/2020/08/cropped-logo_ibiza_4.png"
+    />
+    <meta
+      name="og:image:secure_url"
+      content="assets/images/https://www.ibizaacabamentos.com.br/wp-content/uploads/2020/08/cropped-logo_ibiza_4.png"
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="assets/images/https://www.ibizaacabamentos.com.br/wp-content/uploads/2020/08/cropped-logo_ibiza_4.png"
+    />
+    <meta property="og:site_name" content="Ibiza" />
+    <meta property="og:title" content="Catálogo Ibiza" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      .banner {
+        background: #000;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+      }
+      .banner .video {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .banner::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: #230b0caf;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+      .degrade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+      }
+      .banner .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 888;
+        position: relative;
+        padding-bottom: 10rem;
+      }
+      .banner .btn {
+        background: #a93540;
+        transition: filter 0.6s;
+      }
+      .banner .btn:hover {
+        filter: brightness(80%);
+      }
+      .banner-infos {
+        position: absolute;
+        bottom: 0;
+        z-index: 200;
+        background: #2d1a1b;
+        height: 30vh;
+        width: 100%;
+      }
+      .banner-adereco {
+        position: absolute;
+        bottom: calc(30vh - 5px);
+        width: 100vw;
+        z-index: 240;
+      }
+      .banner-infos p {
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        width: 720px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0 auto;
+        animation: animarTexto 0.8s forwards;
+      }
+      .brasao {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 300;
+        bottom: 23vh;
+      }
+
+      @keyframes animarTexto {
+        from {
+          opacity: 0;
+          transform: translate3d(0, 60px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .banner-infos p {
+          width: 100%;
+          padding: 0 20px;
+          font-size: 14px;
+          line-height: 21px;
+        }
+        .brasao {
+          width: 80px;
+        }
+      }
+
+      @media (max-width: 550px) {
+        .brasao,
+        .banner-adereco {
+          display: none;
+        }
+        .banner-infos p {
+          padding: 20px !important;
+          font-size: 12px;
+          line-height: 18px;
+        }
+        h1 {
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .banner .container {
+          padding-bottom: 5rem;
+        }
+        .banner .btn {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <a href="index.html#banner"
+          ><img src="assets/imagens/logo.svg" alt="logo" class="logo"
+        /></a>
+        <nav>
+          <button id="btn_mobile">
+            <span id="hamburger"></span>
+          </button>
+          <ul class="nav-menu">
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              />
+              <a href="#segmentos">Acabamentos</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#segmentos">Banhos</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#segmentos">Antônio Lupi</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#">Catálogo</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#blog">Blog</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#contato">Contato</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="assets/imagens/whatsapp.png"
+                  class="link-whatsapp"
+                  alt="whatsapp"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner" id="banner">
+      <img class="degrade" src="assets/imagens/degrade.svg" alt="degrade" />
+
+      <video
+        src="assets/videos/ibiza.mp4"
+        autoplay
+        loop
+        muted
+        class="video"
+      ></video>
+
+      <div class="container animar">
+        <h1>O QUE HÁ DE MAIS MODERNO EM ACABAMENTOS</h1>
+
+        <a href="#" class="btn">
+          <span>Fale conosco</span>
+          <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
+        </a>
+      </div>
+
+      <img
+        src="assets/imagens/adereco_banner.svg"
+        alt="adereço"
+        class="banner-adereco"
+      />
+      <img src="assets/imagens/brasao.png" alt="brasão" class="brasao" />
+
+      <div class="banner-infos">
+        <p>
+          Atuante a mais de 25 anos no mercado, temos a preocupação de oferecer
+          qualidade, tecnologia e design diferenciado nos nossos produtos e
+          buscamos constantemente as últimas tendências e novidades do segmento
+          nacional e internacional para que nossos clientes possam inovar e
+          surpreender em qualquer projeto.
+        </p>
+      </div>
+    </section>
+
+    <!-- segmentos -->
+    <section class="segmentos" id="segmentos">
+      <h2 class="titulo">segmentos</h2>
+
+      <div class="segmentos_itens" data-aos="fade-up" data-aos-duration="3000">
+        <a href="" class="segmento_item">
+          <img src="assets/imagens/acabamentos.jpg" alt="acabamentos" />
+          <h3 class="subtitulo">
+            acabamentos <i class="fas fa-angle-double-right"></i>
+          </h3>
+
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            ullam itaque, quae nulla aliquid officia quidem facilis illo animi
+            amet?
+          </p>
+        </a>
+        <a href="" class="segmento_item">
+          <img src="assets/imagens/banhos.jpg" alt="banhos" />
+          <h3 class="subtitulo">
+            banho <i class="fas fa-angle-double-right"></i>
+          </h3>
+
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            ullam itaque, quae nulla aliquid officia quidem facilis illo animi
+            amet?
+          </p>
+        </a>
+        <a href="" class="segmento_item">
+          <img src="assets/imagens/al.jpg" alt="antonio lupi" />
+          <h3 class="subtitulo">
+            antonio lupi <i class="fas fa-angle-double-right"></i>
+          </h3>
+
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            ullam itaque, quae nulla aliquid officia quidem facilis illo animi
+            amet?
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog" id="blog">
+      <h2 class="titulo">blog</h2>
+
+      <div class="conteudo-blog">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+          <div class="noticias">
+            <div>
+              <div class="noticia">
+                <img
+                  src="https://images.unsplash.com/photo-1622495549609-523be9cc6f32?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  alt="notícia"
+                />
+                <a href="" class="desc-noticia">
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                  <span class="data"> dd/mm/aaaa </span>
+                </a>
+              </div>
+              <div class="noticia">
+                <img
+                  src="https://images.unsplash.com/photo-1623044340083-a9d4e2b31ff0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  alt="notícia"
+                />
+                <a href="" class="desc-noticia">
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                  <span class="data"> dd/mm/aaaa </span>
+                </a>
+              </div>
+            </div>
+            <div class="noticia noticia_maior">
+              <img
+                src="https://images.unsplash.com/photo-1623043738176-3d28f44f3076?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="notícia"
+              />
+              <a href="" class="desc-noticia">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <span class="data"> dd/mm/aaaa </span>
+              </a>
+            </div>
+            <div>
+              <div class="noticia">
+                <img
+                  src="https://images.unsplash.com/photo-1623062644289-043f789e7448?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  alt="notícia"
+                />
+                <a href="" class="desc-noticia">
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                  <span class="data"> dd/mm/aaaa </span>
+                </a>
+              </div>
+              <div class="noticia">
+                <img
+                  src="https://images.unsplash.com/photo-1620440728496-956906e8ab1c?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="notícia"
+                />
+                <a href="" class="desc-noticia">
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                  <span class="data"> dd/mm/aaaa </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn">
+            <span>Ver mais</span>
+            <i class="fas fa-angle-double-right" style="color: #fff"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contato -->
+    <div class="itens-contato container" id="contato" data-aos="zoom-out-right">
+      <div class="item-contato">
+        <img
+          src="assets/imagens/telefone.svg"
+          alt="telefone"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        />
+        <div>
+          <h2>Telefone/WhatsApp</h2>
+          <h3>(11) 3061 2780</h3>
+        </div>
+      </div>
+      <div class="item-contato">
+        <img
+          src="assets/imagens/email.svg"
+          alt="telefone"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        />
+        <div>
+          <h2>e-mail</h2>
+          <h3>contato@ibiza.com.br</h3>
+        </div>
+      </div>
+      <div class="item-contato">
+        <img
+          src="assets/imagens/endereco.svg"
+          alt="telefone"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        />
+        <div>
+          <h2>endereços</h2>
+          <h3>
+            R. dos Pinheiros, 551- SP <br />
+            R. Fradique Coutinho 100/112 - SP
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="conteudo-footer">
+        <div class="container">
+          <div class="horarios">
+            <h2>Horário de funcionamento</h2>
+            <p>
+              Seg. a Sex. das 09h às 19h <br />
+              Sábados das 10h às 16h
+            </p>
+          </div>
+
+          <a href="#" class="btn">
+            <span>Fale conosco</span>
+            <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
+          </a>
+
+          <img
+            src="assets/imagens/logo-footer.png"
+            alt="logomarca"
+            class="logo-footer"
+          />
+        </div>
+      </div>
+      <div class="copy">
+        <p>Copyright © 2021 Ibiza. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
