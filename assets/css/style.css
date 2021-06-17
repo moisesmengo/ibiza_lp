@@ -96,10 +96,13 @@ header .container {
 .adereco {
   animation: 0.6s girar forwards;
 }
-.nav-menu li img{
+.nav-menu li img {
   display: none;
 }
-.nav-menu li.ativo img{
+.link-whatsapp {
+  display: block !important;
+}
+.nav-menu li.ativo img {
   display: block;
 }
 @keyframes girar {

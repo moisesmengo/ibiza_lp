@@ -1,0 +1,199 @@
+body {
+  background: #e5e5e5;
+  color: #666565;
+}
+.posts {
+  margin-top: 70px;
+}
+.titulo_posts {
+  text-align: center;
+  color: #666565;
+  font-size: 25px;
+  font-weight: bold;
+}
+.titulo_posts::after {
+  content: "";
+  width: 160px;
+  height: 5px;
+  background: #a93540;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+.posts main {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  grid-gap: 60px;
+}
+.filtros form label {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.filtros form select {
+  width: 100%;
+  height: 48px;
+  padding: 11px;
+  font-size: 16px;
+  color: #666565b6;
+  border-radius: 5px;
+  font-weight: 400;
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+.separador {
+  width: 100%;
+  height: 5px;
+  background: #a93540;
+}
+.sociais {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0 20px 0;
+}
+.sociais a i {
+  color: #000 !important;
+  font-size: 40px;
+}
+
+.chamada_blog {
+  background: #a93540;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+.chamada_blog .btn,
+.sociais a {
+  transition: transform 0.4s;
+}
+.chamada_blog .btn:hover,
+.sociais a:hover {
+  transform: scale(1.1);
+}
+.post {
+  border: #a93540 1px solid;
+  padding: 23px;
+  position: relative;
+}
+.post_pricipal {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  grid-gap: 24px;
+}
+.img_post {
+  width: 100%;
+}
+.img_post img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.infopost_principal.info_post h2,
+.info_post h2 {
+  color: #a93540 !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.info_post strong {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+.ler_mais {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  color: #666565;
+  font-weight: bold;
+  font-size: 18px;
+  transition: ease 0.3s;
+}
+.ler_mais:hover {
+  text-decoration: underline;
+}
+.posts_sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  grid-gap: 20px;
+}
+.posts_sec .post strong {
+  margin-bottom: 40px;
+}
+.posts_sec .post h2 {
+  margin-top: 40px;
+}
+.paginas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.paginas a {
+  font-size: 40px;
+  color: #a93540;
+}
+.item-contato > div h2,
+.item-contato > div h3 {
+  color: #666565;
+}
+.conteudo-footer {
+  background: #000;
+}
+.conteudo-footer p,
+.conteudo-footer h2 {
+  color: #fff;
+}
+
+@media (max-width: 1150px) {
+  .post_pricipal {
+    grid-template-columns: 220px 1fr;
+  }
+  .img_post img {
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .posts main {
+    grid-template-columns: 1fr;
+  }
+  .img_post img {
+    height: 100%;
+    max-height: 300px;
+  }
+  .sociais {
+    justify-content: space-between;
+  }
+  .chamada_blog .btn {
+    margin: 20px auto 0 auto;
+  }
+  .posts_sec {
+    grid-template-columns: 1fr;
+  }
+  .post {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-gap: 24px;
+  }
+  .posts_sec .post h2 {
+    margin-top: 0;
+  }
+  .posts_sec {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .posts main {
+    margin-top: 40px;
+  }
+  .sociais{
+    justify-content: space-evenly;
+  }
+}

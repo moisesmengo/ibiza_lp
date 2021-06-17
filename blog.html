@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibiza</title>
+
+    <meta name="description" content="A maior em acabamentos" />
+    <meta
+      name="keywords"
+      content="acabamentos, revestimentos, arquitetura, catálogo digital"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="og:image"
+      content="assets/images/https://www.ibizaacabamentos.com.br/wp-content/uploads/2020/08/cropped-logo_ibiza_4.png"
+    />
+    <meta
+      name="og:image:secure_url"
+      content="assets/images/https://www.ibizaacabamentos.com.br/wp-content/uploads/2020/08/cropped-logo_ibiza_4.png"
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="assets/images/https://www.ibizaacabamentos.com.br/wp-content/uploads/2020/08/cropped-logo_ibiza_4.png"
+    />
+    <meta property="og:site_name" content="Ibiza" />
+    <meta property="og:title" content="Catálogo Ibiza" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+
+    <style>
+      .banner {
+        background: url(assets/imagens/banner-blog.jpg) no-repeat;
+        background-size: cover;
+        height: 332px;
+        position: relative;
+      }
+      .degrade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+      }
+      .banner .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .banner .btn {
+        background: #a93540;
+        transition: filter 0.6s;
+      }
+      .banner .btn:hover {
+        filter: brightness(80%);
+      }
+
+      @media (max-width: 550px) {
+        h1 {
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        .banner .btn {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <a href="index.html#banner"
+          ><img src="assets/imagens/logo.svg" alt="logo" class="logo"
+        /></a>
+        <nav>
+          <button id="btn_mobile">
+            <span id="hamburger"></span>
+          </button>
+          <ul class="nav-menu">
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              />
+              <a href="index.html#segmentos">Acabamentos</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="index.html#segmentos">Banhos</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="index.html#segmentos">Antônio Lupi</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#">Catálogo</a>
+            </li>
+            <li class="ativo">
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#blog">Blog</a>
+            </li>
+            <li>
+              <img
+                src="assets/imagens/adereco.svg"
+                alt="adereço"
+                class="adereco"
+              /><a href="#contato">Contato</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="assets/imagens/whatsapp.png"
+                  class="link-whatsapp"
+                  alt="whatsapp"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner" id="banner">
+      <img class="degrade" src="assets/imagens/degrade.svg" alt="degrade" />
+
+      <div class="container animar">
+        <h1>blog</h1>
+
+        <a href="#" class="btn">
+          <span>Fale conosco</span>
+          <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
+        </a>
+      </div>
+    </section>
+
+    <!-- posts -->
+    <section class="posts container">
+      <h2 class="titulo_posts">POSTS RECENTES</h2>
+
+      <main data-aos="fade-up" data-aos-duration="3000">
+        <div class="filtros">
+          <form action="#">
+            <label for="categorias ">Categorias</label>
+            <select name="categoria" id="categoria">
+              <option value="recentes">Recentes</option>
+              <option value="recentes">Lorem</option>
+              <option value="recentes">Lorem</option>
+            </select>
+          </form>
+
+          <div class="separador"></div>
+
+          <div class="sociais">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <i class="fas fa-facebook-official"></i>
+          </div>
+
+          <hr />
+
+          <div class="chamada_blog">
+            <p>Nossa equipe está sempre disponível para tirar suas dúvidas</p>
+            <a href="#" class="btn">
+              <span>Fale conosco</span>
+              <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
+            </a>
+          </div>
+        </div>
+
+        <div class="post_pricipal post">
+          <div class="img_post_pricipal img_post">
+            <img
+              src="https://images.unsplash.com/photo-1611877605966-fa0927ed4f86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              alt="imagem post"
+            />
+          </div>
+
+          <div class="infopost_principal info_post">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+            <p>
+              Bicyclists cross Tilikum crossing together at sunset. Bicyclists
+              cross Tilikum crossing together at sunset. Bicyclists cross
+              Tilikum crossing together at sunsetBicyclists cross Tilikum
+              crossing together at sunset Bicyclists cross Tilikum crossing tog
+            </p>
+
+            <strong>dd/mm/aaaa</strong>
+          </div>
+
+          <a href="post.html" class="ler_mais"
+            >Ler mais <i class="fas fa-angle-double-right"></i
+          ></a>
+        </div>
+      </main>
+
+      <div class="posts_sec" data-aos="fade-up" data-aos-duration="3000">
+        <div class="post">
+          <div class="img_post">
+            <img
+              src="https://images.unsplash.com/photo-1611877605966-fa0927ed4f86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              alt="post"
+            />
+          </div>
+
+          <div class="info_post">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+            <p>
+              Bicyclists cross Tilikum crossing together at sunset. Bicyclists
+              cross Tilikum crossing together at sunset. Bicyclists cross
+              Tilikum crossing together at sunsetBicyclists cross Tilikum
+              crossing together at sunset Bicyclists cross Tilikum crossing tog
+            </p>
+
+            <strong>dd/mm/aaaa</strong>
+
+            <a href="post.html" class="ler_mais"
+              >Ler mais <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img_post">
+            <img
+              src="https://images.unsplash.com/photo-1611877605966-fa0927ed4f86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              alt="post"
+            />
+          </div>
+
+          <div class="info_post">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+            <p>
+              Bicyclists cross Tilikum crossing together at sunset. Bicyclists
+              cross Tilikum crossing together at sunset. Bicyclists cross
+              Tilikum crossing together at sunsetBicyclists cross Tilikum
+              crossing together at sunset Bicyclists cross Tilikum crossing tog
+            </p>
+
+            <strong>dd/mm/aaaa</strong>
+
+            <a href="post.html" class="ler_mais"
+              >Ler mais <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img_post">
+            <img
+              src="https://images.unsplash.com/photo-1611877605966-fa0927ed4f86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              alt="post"
+            />
+          </div>
+
+          <div class="info_post">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+            <p>
+              Bicyclists cross Tilikum crossing together at sunset. Bicyclists
+              cross Tilikum crossing together at sunset. Bicyclists cross
+              Tilikum crossing together at sunsetBicyclists cross Tilikum
+              crossing together at sunset Bicyclists cross Tilikum crossing tog
+            </p>
+
+            <strong>dd/mm/aaaa</strong>
+
+            <a href="post.html" class="ler_mais"
+              >Ler mais <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paginas">
+        <a href=""><i class="fas fa-angle-double-left"></i></a>
+        <a href=""><i class="fas fa-angle-double-right"></i></a>
+      </div>
+    </section>
+
+    <!-- contato -->
+    <div class="itens-contato container" id="contato" data-aos="zoom-out-right">
+      <div class="item-contato">
+        <img
+          src="assets/imagens/telefone.svg"
+          alt="telefone"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        />
+        <div>
+          <h2>Telefone/WhatsApp</h2>
+          <h3>(11) 3061 2780</h3>
+        </div>
+      </div>
+      <div class="item-contato">
+        <img
+          src="assets/imagens/email.svg"
+          alt="telefone"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        />
+        <div>
+          <h2>e-mail</h2>
+          <h3>contato@ibiza.com.br</h3>
+        </div>
+      </div>
+      <div class="item-contato">
+        <img
+          src="assets/imagens/endereco.svg"
+          alt="telefone"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        />
+        <div>
+          <h2>endereços</h2>
+          <h3>
+            R. dos Pinheiros, 551- SP <br />
+            R. Fradique Coutinho 100/112 - SP
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="conteudo-footer">
+        <div class="container">
+          <div class="horarios">
+            <h2>Horário de funcionamento</h2>
+            <p>
+              Seg. a Sex. das 09h às 19h <br />
+              Sábados das 10h às 16h
+            </p>
+          </div>
+
+          <a href="#" class="btn">
+            <span>Fale conosco</span>
+            <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
+          </a>
+
+          <img
+            src="assets/imagens/logo-footer.png"
+            alt="logomarca"
+            class="logo-footer"
+          />
+        </div>
+      </div>
+      <div class="copy">
+        <p>Copyright © 2021 Ibiza. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
