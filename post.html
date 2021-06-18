@@ -48,6 +48,12 @@
         height: 332px;
         position: relative;
       }
+      .banner h1 {
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: none;
+        max-width: 100%;
+      }
       .degrade {
         position: absolute;
         top: 0;
@@ -128,7 +134,7 @@
                 src="assets/imagens/adereco.svg"
                 alt="adereço"
                 class="adereco"
-              /><a href="#blog">Blog</a>
+              /><a href="blog.html">Blog</a>
             </li>
             <li>
               <img
@@ -155,75 +161,56 @@
       <img class="degrade" src="assets/imagens/degrade.svg" alt="degrade" />
 
       <div class="container animar">
-        <h1>blog</h1>
-
-        <a href="#" class="btn">
-          <span>Fale conosco</span>
-          <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
-        </a>
+        <h1>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          quibusdam illo eius?
+        </h1>
       </div>
     </section>
 
-    <!-- posts -->
-    <section class="posts container">
-      <h2 class="titulo_posts">POSTS RECENTES</h2>
+    <article
+      class="conteudo_post container"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      <div class="img_post">
+        <img
+          src="https://images.unsplash.com/photo-1594430050035-b188f665f411?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+          alt="imagem post"
+        />
+      </div>
 
-      <main data-aos="fade-up" data-aos-duration="3000">
-        <div class="filtros">
-          <form action="#">
-            <label for="categorias ">Categorias</label>
-            <select name="categoria" id="categoria">
-              <option value="recentes">Recentes</option>
-              <option value="recentes">Lorem</option>
-              <option value="recentes">Lorem</option>
-            </select>
-          </form>
+      <div class="conteudo_post_texto">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad
+          totam enim aliquid quas minus nisi alias hic molestiae voluptatum,
+          debitis modi illum esse iste placeat laboriosam eligendi doloremque
+          asperiores eos doloribus dignissimos delectus in! Voluptatibus
+          accusamus ipsum fugit voluptatum.
+        </p>
 
-          <div class="separador"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga
+          aliquid suscipit neque aliquam et architecto dolores quis deserunt
+          accusantium in minima officiis numquam optio, hic ipsum at doloremque
+          nulla?
+        </p>
 
-          <div class="sociais">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          dignissimos ea numquam rerum officia omnis iure necessitatibus nobis
+          alias quod! Atque eligendi aliquam quae voluptatibus, praesentium
+          alias tempora neque expedita.
+        </p>
+      </div>
 
-          <hr />
+      <div class="sociais">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
 
-          <div class="chamada_blog">
-            <p>Nossa equipe está sempre disponível para tirar suas dúvidas</p>
-            <a href="#" class="btn">
-              <span>Fale conosco</span>
-              <img src="assets/imagens/whatsapp.png" alt="whatsapp" />
-            </a>
-          </div>
-        </div>
-
-        <div class="post_pricipal post">
-          <div class="img_post_pricipal img_post">
-            <img
-              src="https://images.unsplash.com/photo-1611877605966-fa0927ed4f86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              alt="imagem post"
-            />
-          </div>
-
-          <div class="infopost_principal info_post">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-
-            <p>
-              Bicyclists cross Tilikum crossing together at sunset. Bicyclists
-              cross Tilikum crossing together at sunset. Bicyclists cross
-              Tilikum crossing together at sunsetBicyclists cross Tilikum
-              crossing together at sunset Bicyclists cross Tilikum crossing tog
-            </p>
-
-            <strong>dd/mm/aaaa</strong>
-          </div>
-
-          <a href="post.html" class="ler_mais"
-            >Ler mais <i class="fas fa-angle-double-right"></i
-          ></a>
-        </div>
-      </main>
+      <h3 class="titulo_posts">Postagens Relacionadas</h3>
 
       <div class="posts_sec" data-aos="fade-up" data-aos-duration="3000">
         <div class="post">
@@ -302,10 +289,21 @@
           </div>
         </div>
       </div>
+    </article>
 
-      <div class="paginas">
-        <a href=""><i class="fas fa-angle-double-left"></i></a>
-        <a href=""><i class="fas fa-angle-double-right"></i></a>
+    <section class="container" data-aos="fade-up" data-aos-duration="3000">
+      <div class="infos_footer_post">
+        <div class="comentarios">
+          <textarea
+            name="coment"
+            id="coment"
+            cols="30"
+            rows="10 "
+            placeholder="Deixe aqui o seu comentário"
+          ></textarea>
+
+          <button type="submit " class="btn btn_coment">Comentar</button>
+        </div>
       </div>
     </section>
 
